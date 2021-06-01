@@ -1,0 +1,46 @@
+html
+    include header
+    body
+        //Комментарий
+        //Длинный комментарий
+            он всё ещё идёт до следующих двух слешей
+        //
+        h1 Pug
+        h1="Работа с БД"
+        h3 Вывод пользователей
+        form
+            div.form-group
+                labe(for='getUserByIdInput') Id
+                input#getUserByIdInput
+                button#getAllBtn(type = 'button') Вывести всех пользователей
+                button#getUserByIdBtn(type = 'button') Вывести конкретного по id
+                div#getAllOutput
+        h3 Создание пользователей
+        form
+            div.form-group
+                label(for='createUserInput') Контент
+                input#createUserInput
+                button#createUserBtn(type='button') Создать
+                div#createUserOutput
+        h3 Удаление пользователей
+        form
+            div.form-group
+                label(for='createUserInput') Id
+                input#deleteUserInput
+                button#deleteUserBtn(type='button') Удалить
+                div#deleteUserOutput
+        h3 Обновление пользователей
+        form
+            div.form-group
+                label(for='updateUserIDInput') Id
+                input#updateUserIDInput
+                label(for='updateUserBodyInput') Контент
+                input#updateUserBodyInput
+                button#updateUserBtn(type='button') Обновить
+                div#updateuSerOutput
+
+        h3 Привет тебе '#{name}' в твои #{age} года!
+        - let arr = ["AAA", "BB", "CCC"]
+        ul
+            each el in arr
+                li(id='s' + el)=el

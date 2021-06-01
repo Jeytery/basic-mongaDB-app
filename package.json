@@ -1,0 +1,17 @@
+{
+  "name": "noda_l5_2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "pug": "^3.0.2"
+  }
+}
